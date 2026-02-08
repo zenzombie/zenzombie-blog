@@ -18,20 +18,21 @@ tableOfContents: false
   footer { display: none !important; }
 
 /* HOME: stable vertical stage */
-.home .home-hero {
+.home-hero {
   --header-h: var(--sl-nav-height, 3.5rem);
 
   min-height: calc(100vh - var(--header-h));
   display: grid;
-  place-items: start center;      /* top-align within the cell, keep horizontal center */
-  align-content: center;          /* keep grid tracks centered */
+  place-items: start center;
 
-  padding: clamp(2rem, 8vh, 6rem) 2rem;
+  padding-top: calc((100dvh - var(--header-h)) * 0.24);
+  padding-inline: 2rem;
+  box-sizing: border-box;
 }
 
 
 /* HOME: the sentence */
-.home .home-tagline {
+.home-tagline {
   margin: 0;
 
   font-size: clamp(1.2rem, 1.6vw, 1.5rem);
