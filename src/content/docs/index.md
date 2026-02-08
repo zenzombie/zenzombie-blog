@@ -40,7 +40,7 @@ tableOfContents: false
     align-items: flex-start;
     justify-content: center;
     height: calc(100dvh - var(--sl-nav-height, 3.5rem));
-    padding-top: calc((100dvh - var(--sl-nav-height, 3.5rem)) * 0.382);
+    padding-top: calc((100dvh - var(--sl-nav-height, 3.5rem)) * 0.35);
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -51,19 +51,19 @@ tableOfContents: false
       position: fixed;
       left: 50%;
       transform: translateX(-50%);
-      top: calc(var(--sl-nav-height, 3.5rem) + (100dvh - var(--sl-nav-height, 3.5rem)) * 0.382);
+      top: calc(var(--sl-nav-height, 3.5rem) + (100dvh - var(--sl-nav-height, 3.5rem)) * 0.35);
     }
   }
 
   /* Quiet, intentional statement styling */
   .sl-markdown-content p {
-    font-size: 1.2em;
+    font-size: 1.35em;
     font-weight: 300;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.025em;
     text-align: center;
-    max-width: 32rem;
-    line-height: 1.6;
-    color: var(--sl-color-gray-2);
+    max-width: 34rem;
+    line-height: 1.55;
+    color: var(--sl-color-gray-1);
   }
 </style>
 
