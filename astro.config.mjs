@@ -8,6 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'zenzombie',
+			customCss: ['./src/styles/custom.css'],
 			routeMiddleware: './src/routeData.ts',
 			pagination: false,
 			head: [
@@ -17,11 +18,12 @@ export default defineConfig({
 			],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/zenzombie/zenzombie.me' }],
 			sidebar: [
-				{ label: 'About', slug: 'about' },
 				{
 					label: 'Essays',
+					collapsed: true,
 					autogenerate: { directory: 'essays' },
 				},
+				{ label: 'About', slug: 'about' },
 			],
 		}),
 	],
